@@ -7,22 +7,24 @@ const PORT = 4000;
 
 const schema = gql`
   type Query {
-    me: User
+    user(id: Int!): User
+    users: [User!]
   }
   type User {
     username: String!
     email: String!
     name: String!
+    id: Int!
   }
 `;
 const resolvers = {
   Query: {
-    me: () => {
-      return {
-        username: UserData.username,
-        name: UserData.name,
-        email: UserData.email
-      };
+    user: (parent, args) => {
+      let userData = UserData.find(user => user.id === args.id);
+      return userData;
+    },
+    users: () => {
+      return Object.values(UserData);
     }
   }
 };
