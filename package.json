@@ -1,0 +1,19 @@
+{
+  "name": "graphql-express",
+  "version": "1.0.0",
+  "description": "Simple GraphQL with express js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganny26/graphql-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ganny26/graphql-express/issues"
+  },
+  "homepage": "https://github.com/ganny26/graphql-express#readme"
+}
