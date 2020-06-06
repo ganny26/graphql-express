@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/ganny26/graphql-express#readme",
   "dependencies": {
-    "apollo-server-express": "^2.9.7",
+    "apollo-server-express": "^2.14.2",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "graphql": "^14.5.8",
